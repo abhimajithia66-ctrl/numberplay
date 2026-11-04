@@ -1,0 +1,123 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #10101c;
+  color: white;
+  text-align: center;
+}
+
+header {
+  background: #201b38;
+  padding: 22px;
+}
+
+header h1 {
+  margin: 0;
+  color: #c6a5ff;
+  font-size: 28px;
+}
+
+header p {
+  color: #aaa;
+}
+
+main {
+  width: 92%;
+  max-width: 450px;
+  margin: 25px auto;
+}
+
+.score-card,
+.game-card,
+.history-card {
+  background: #211f34;
+  border: 1px solid #39344f;
+  border-radius: 15px;
+  padding: 22px;
+  margin-bottom: 20px;
+}
+
+.score-card h2 {
+  font-size: 35px;
+  color: #b99aff;
+  margin: 10px;
+}
+
+.target {
+  width: 145px;
+  height: 145px;
+  margin: 25px auto;
+  border-radius: 20px;
+  background: #39344f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  color: white;
+  font-weight: bold;
+  border-radius: 10px;
+  padding: 14px 20px;
+  font-size: 15px;
+}
+
+button:disabled {
+  opacity: .45;
+  cursor: not-allowed;
+}
+
+.red {
+  background: #ef4444;
+}
+
+.green {
+  background: #16a34a;
+}
+
+.violet {
+  background: #9333ea;
+}
+
+.start-btn {
+  background: #7650d8;
+  width: 100%;
+  margin-top: 15px;
+}
+
+#message {
+  min-height: 24px;
+  color: #d5c7ff;
+}
+
+.history-card ul {
+  padding: 0;
+  list-style: none;
+}
+
+.history-card li {
+  background: #302c46;
+  padding: 12px;
+  border-radius: 8px;
+  margin: 8px 0;
+}
+
+footer {
+  color: #888;
+  padding: 20px;
+}
