@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NumberPlay - Colour Challenge</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>🎮 NumberPlay</h1>
+    <p>Colour Challenge</p>
+  </header>
+
+  <main>
+    <section class="score-card">
+      <span>Your Score</span>
+      <h2 id="score">0</h2>
+      <small>Practice points — no cash value</small>
+    </section>
+
+    <section class="game-card">
+      <h2>Colour Matching Challenge</h2>
+      <p id="instruction">Remember the target colour!</p>
+
+      <div id="target" class="target">
+        READY?
+      </div>
+
+      <div class="buttons">
+        <button class="colour red" onclick="choose('Red')">Red</button>
+        <button class="colour green" onclick="choose('Green')">Green</button>
+        <button class="colour violet" onclick="choose('Violet')">Violet</button>
+      </div>
+
+      <p id="message">Press Start to play.</p>
+      <button id="start" class="start-btn" onclick="startGame()">
+        Start Challenge
+      </button>
+    </section>
+
+    <section class="history-card">
+      <h3>Recent Results</h3>
+      <ul id="history">
+        <li>No games played yet.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>NumberPlay © 2026 | Free practice game</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
